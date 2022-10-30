@@ -408,10 +408,7 @@ public class AddPatientDetails extends javax.swing.JFrame {
         }
         else if (!(Pattern.matches("^[a-zA-Z0-9]+[@]{1}+[a-zA-Z0-9]+[.]{1}+[a-zA-Z0-9]+$", email)))
         {
-            JOptionPane.showMessageDialog(null,
-                "Please enter a valid email",
-                "Error",
-                JOptionPane.ERROR_MESSAGE);
+            
         }
         else{
             PatData pd = PatDirectory.addNewpatData();
