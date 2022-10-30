@@ -96,6 +96,7 @@ public class AddDoctorDetails1 extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         JCityDoc = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
+        JJoiningDateDoc = new com.toedter.calendar.JDateChooser();
         JSaveDocButton = new javax.swing.JButton();
         jLabel13 = new javax.swing.JLabel();
         JBackAddDoctorButton = new javax.swing.JButton();
@@ -215,6 +216,7 @@ public class AddDoctorDetails1 extends javax.swing.JFrame {
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("City");
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 500, 80, 40));
+        jPanel1.add(JJoiningDateDoc, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 600, 150, 30));
 
         JSaveDocButton.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         JSaveDocButton.setForeground(new java.awt.Color(0, 102, 153));
@@ -229,12 +231,13 @@ public class AddDoctorDetails1 extends javax.swing.JFrame {
         jLabel13.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Doctor's Details");
-        jLabel13.setBorder(javax.swing.BorderFactory.createBevelBorder(null));
+        jLabel13.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 740, 80));
 
         JBackAddDoctorButton.setBackground(new java.awt.Color(0, 153, 204));
+        JBackAddDoctorButton.setIcon(new javax.swing.ImageIcon("/Users/anupamaditya/Downloads/undo-2.png")); // NOI18N
         JBackAddDoctorButton.setText("Back");
-        JBackAddDoctorButton.setBorder(javax.swing.BorderFactory.createBevelBorder(null));
+        JBackAddDoctorButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         JBackAddDoctorButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 JBackAddDoctorButtonMouseClicked(evt);
@@ -614,6 +617,7 @@ public class AddDoctorDetails1 extends javax.swing.JFrame {
     private javax.swing.JTextField JEmail;
     private javax.swing.JTextField JFNameDoc;
     private javax.swing.JComboBox<String> JGenderDoc;
+    private com.toedter.calendar.JDateChooser JJoiningDateDoc;
     private javax.swing.JTextField JLNameDoc;
     private javax.swing.JTextField JPhoneNoDoc;
     private javax.swing.JTextField JPinCode;
